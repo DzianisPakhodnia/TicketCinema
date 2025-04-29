@@ -2,15 +2,22 @@
 {
     public class Note
     {
-        public Note(st)
+        public Note(string title, string description)
+        {
+            Title = title;
+            Description = description;
+            CreatedAt = DateTime.Now;
 
-        public Guid Id { get; set; }
 
-        public string Title { get; set; } = string.Empty;
+        }
 
-        public string Description { get; set; } = string.Empty;
+        public Guid Id { get; init; }
 
-        public DateTime CreatedAt { get; set; }
+        public string Title { get; init; } = string.Empty;
+
+        public string Description { get; init; } = string.Empty;
+
+        public DateTime CreatedAt { get; init; }
 
     }
 }
